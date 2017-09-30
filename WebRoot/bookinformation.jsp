@@ -1,5 +1,5 @@
 <%@ page language ="java" contentType="text/html;charset=GB18030" pageEncoding="GB18030" %>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
@@ -39,7 +39,8 @@
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
-		
+		<!-- GOOGLE FONT -->
+		<!--  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">-->
 	</head>
 <body class="">
 		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
@@ -184,7 +185,7 @@
 
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>Home</li><li>Show Table</li>
+					<li>Home</li><li>Show Table</li><li>Show Book</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -215,9 +216,9 @@
 									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
 									<h2>Book Information</h2>
 
-								</header>
-
-								<!-- widget div-->
+								</header>		
+				
+				<!-- widget div-->
 								<div>
 
 									<!-- widget edit box -->
@@ -229,8 +230,6 @@
 
 									<!-- widget content -->
 									<div class="widget-body no-padding">
-
-										
 
 										<table class="table">
 											<thead>
@@ -244,38 +243,7 @@
 													<th> Price</th>
 												</tr>
 											</thead>
-											<tbody>
-											<!--  s:iterator value="recordlist" var="o" status="i"-->
-												<tr class="success">
-													<td>${o.id}</td>
-													<td>TB - Monthly</td>
-													<td>01/04/2012</td>
-													<td>Approved</td>
-													<td>Approved</td>
-													<td>Approved</td>
-													<td>Approved</td>
-													
-												</tr>
-											<!--  /s:iterator-->
-												<tr class="danger">
-														<td>2</td>
-														<td>TB - Monthly</td>
-														<td>02/04/2012</td>
-														<td>Declined</td>
-														<td>Approved</td>
-														<td>Approved</td>
-														<td>Approved</td>
-														
-												</tr>
-												<tr class="warning">
-													<td>3</td>
-													<td><a href="bookinformation.jsp">TB - Monthly</td>
-													<td>03/04/2012</td>
-													<td>Pending</td>
-													<td>Approved</td>
-													<td>Approved</td>
-													<td>Approved</td>
-												</tr>
+											
 												<tr class="info">
 													<td>4</td>
 													<td>TB - Monthly</td>
@@ -284,102 +252,18 @@
 													<td>Approved</td>
 													<td>Approved</td>
 													<td>Approved</td>
-						 						</tr>	
+						 						</tr>
 											</tbody>
 										</table>
-
-									</div>
-									<!-- end widget content -->
-
-								</div>
-								<!-- end widget div -->
-
-							</div>
-							<!-- end widget -->
-							
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-1" data-widget-editbutton="false">
-								<!-- widget options:
-								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-								data-widget-colorbutton="false"
-								data-widget-editbutton="false"
-								data-widget-togglebutton="false"
-								data-widget-deletebutton="false"
-								data-widget-fullscreenbutton="false"
-								data-widget-custombutton="false"
-								data-widget-collapsed="true"
-								data-widget-sortable="false"
-
-								-->
-								<header>
-									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
-									<h2>Author Information</h2>
-								</header>
-
-								<!-- widget div-->
-								<div>
-
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-
-									</div>
-									<!-- end widget edit box -->
-
-									<!-- widget content -->
-									<div class="widget-body no-padding">
-
 										
-										<table class="table table-bordered table-striped">
-											<thead>
-												<tr>
-													<th>AuthorID(PK)</th>
-													<th>Name</th>
-													<th>Age</th>
-													<th>Country</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-												<tr>
-													<td>Row 1</td>
-													<td>Row 2</td>
-													<td>Row 3</td>
-													<td>Row 4</td>
-												</tr>
-											</tbody>
-										</table>
-
+										<footer>
+												<button  >
+													<a href="Changebookinformation.jsp">Update</a>
+												</button>
+												<button type="button" class="btn btn-default" onclick="window.history.back();">
+													Back
+												</button>
+											</footer>
 									</div>
 									<!-- end widget content -->
 
@@ -389,103 +273,5 @@
 							</div>
 							<!-- end widget -->
 							
-
-						</article>
-						<!-- WIDGET END -->
-			</div>
-			
-			<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
-
-		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script>
-			if (!window.jQuery) {
-				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
-			}
-		</script>
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-			}
-		</script>
-
-		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
-		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
-
-		<!-- BOOTSTRAP JS -->
-		<script src="js/bootstrap/bootstrap.min.js"></script>
-
-		<!-- CUSTOM NOTIFICATION -->
-		<script src="js/notification/SmartNotification.min.js"></script>
-
-		<!-- JARVIS WIDGETS -->
-		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
-
-		<!-- EASY PIE CHARTS -->
-		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-
-		<!-- SPARKLINES -->
-		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- JQUERY VALIDATE -->
-		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
-
-		<!-- JQUERY MASKED INPUT -->
-		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-
-		<!-- JQUERY SELECT2 INPUT -->
-		<script src="js/plugin/select2/select2.min.js"></script>
-
-		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-
-		<!-- browser msie issue fix -->
-		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-
-		<!-- FastClick: For mobile devices -->
-		<script src="js/plugin/fastclick/fastclick.js"></script>
-
-		<!--[if IE 7]>
-
-		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
-
-		<![endif]-->
-
-		<!-- Demo purpose only -->
-		<script src="js/demo.js"></script>
-
-		<!-- MAIN APP JS FILE -->
-		<script src="js/app.js"></script>
-
-		<!-- PAGE RELATED PLUGIN(S) -->
-
-
-		<script type="text/javascript">
-		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-		$(document).ready(function() {
-			pageSetUp();
-		})
-
-		</script>
-
-		<!-- Your GOOGLE ANALYTICS CODE Below -->
-		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-		_gaq.push(['_trackPageview']);
-		
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-
-		</script>
 </body>
 </html>

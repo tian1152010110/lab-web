@@ -152,28 +152,13 @@
 					</li>
 						
 					<li>
-						<a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Book Tables</span></a>
-						<ul>
-							<li class="active">
-								<a href="showtable.jsp">Normal Tables</a>
-							</li>
-							<li>
-								<a href="datatables.html">Data Tables</a>
-							</li>
-						</ul>
+						<a href="showtable.jsp"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Books Information</span></a>
 					</li>
 								
 					<li>
 						<a href="Addnewbook.jsp"><i class="fa fa-lg fa-fw fa-calendar"></i> <span class="menu-item-parent">Add New Book</span></a>
 					</li>
-
-					
-					<li>
-						<a href="gmap-xml.html"><i class="fa fa-lg fa-fw fa-map-marker"></i> <span class="menu-item-parent">Books Information</span></a>
-					</li>
-					
-					
-					
+									
 					<li>
 						<a href="searchwithname.jsp"><i class="fa fa-lg fa-fw fa-desktop"></i> <span class="menu-item-parent">Search By Author Name</span></a>
 					</li>
@@ -187,6 +172,7 @@
 
 		</aside>
 		<!-- END NAVIGATION -->
+
 
 		<!-- MAIN PANEL -->
 		<div id="main" role="main">
@@ -256,7 +242,12 @@
 														<input type="text" class="input-sm">
 													</label>
 												</section>
-				
+												<section>
+													<label class="label">AuthorID(PK)</label>
+													<label class="input">
+														<input type="text" class="input-sm">
+													</label>
+												</section>
 												
 											
 											</fieldset>

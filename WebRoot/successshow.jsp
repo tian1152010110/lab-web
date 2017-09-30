@@ -1,7 +1,5 @@
 <%@ page language ="java" contentType="text/html;charset=GB18030" pageEncoding="GB18030" %>
-<%@ page import="java.sql.*,java.util.*,javax.servlet.*,javax.servlet.http.*,java.text.*,java.math.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
@@ -175,6 +173,7 @@
 		</aside>
 		<!-- END NAVIGATION -->
 
+
 		<!-- MAIN PANEL -->
 		<div id="main" role="main">
 
@@ -185,7 +184,7 @@
 
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>Home</li><li>Add New Book</li>
+					<li>Home</li><li>Success</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -202,47 +201,22 @@
 
 			</div>
 			<!-- END RIBBON -->
-			
 			<!-- MAIN CONTENT -->
 			<div id="content">
-
-				<div class="row">
-					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-						<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Add New Book</h1>
-					</div>
-					
-				</div>
 				
 				<!-- widget grid -->
 				<section id="widget-grid" class="">
 				
 				<!-- START ROW -->
-				
+				<h1>Success</h1>
 					<div class="row">
 				
 						<!-- NEW COL START -->
-						<article class="col-sm-12 col-md-12 col-lg-8">
+						
 				
 							<!-- Widget ID (each widget will need unique ID)-->
 							<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
-								<!-- widget options:
-								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-				
-								data-widget-colorbutton="false"
-								data-widget-editbutton="false"
-								data-widget-togglebutton="false"
-								data-widget-deletebutton="false"
-								data-widget-fullscreenbutton="false"
-								data-widget-custombutton="false"
-								data-widget-collapsed="true"
-								data-widget-sortable="false"
-				
-								-->
-								<header>
-									<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-									<h2>Form Elements</h2>
-				
-								</header>
+								
 				
 								<!-- widget div-->
 								<div>
@@ -257,74 +231,15 @@
 									<!-- widget content -->
 									<div class="widget-body no-padding">
 				
-										<form action="AddnewbookAction.java" method ="post" class="smart-form">
 											
-				
-											<fieldset>
 												
-												<section>
-													<label class="label">New Book Number</label>
-													<label class="input">
-														<input type="text" name="booknumber" value="" class="input-sm">
-													</label>
-												</section>
-				
-												<section>
-													<label class="label">Book ISBN(PK)</label>
-													<label class="input">
-														<input type="text" name="ISBN" value="" class="input-sm">
-													</label>
-												</section>
-				
-												<section>
-													<label class="label">Book Title</label>
-													<label class="input">
-														<input type="text" name="newbookname" value="" class="input-sm" maxlength="10">
-													</label>
-													
-												</section>
-																				
-												<section>
-													<label class="label">Author ID(FK)</label>
-													<label class="input">
-														<input type="text" name="author" value="" class="input-sm">
-													</label>
-												</section>
-												
-												<section>
-													<label class="label">Publisher</label>
-													<label class="input">
-														<input type="text" name="publisher" value="" class="input-sm">
-													</label>
-												</section>
-												
-												<section>
-													<label class="label">Publish Date</label>
-													<label class="input">
-														<input type="text" name="date" value="" class="input-sm">
-													</label>
-												</section>
-												
-												<section>
-													<label class="label">Price</label>
-													<label class="input">
-														<input type="text" name="price" value="" class="input-sm">
-													</label>
-												</section>
-											
-											</fieldset>
-																							
-											
-											<footer>
-												
-												<button type="submit" class="btn btn-primary" >
-													Submit
-												</button>
-												<button type="button" class="btn btn-default" onclick="window.history.back();">
-													Back
-												</button>
-											</footer>
-										</form>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+												<input type="button" name="Submit" value="Íê³É" class="btn btn-primary" onclick="location.href='showtable.jsp'" />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="button" name="Finish" value="¼ÌÐø"class="btn btn-default" onclick="location.href='Addnewbook.jsp'">
+
+
 				
 									</div>
 									<!-- end widget content -->
@@ -334,148 +249,13 @@
 				
 							</div>
 							<!-- end widget -->
-				
-						</article>
+
 					</div>
 						<!-- END COL -->
 						</section>
 						
 			</div>
 	
-			<!-- End main Panel -->
-			
-<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
-		Note: These tiles are completely responsive,
-		you can add as many as you like
-		-->
-		<!-- 
-		<div id="shortcut">
-			<ul>
-				<li>
-					<a href="#inbox.html" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
-				</li>
-				<li>
-					<a href="#calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
-				</li>
-				<li>
-					<a href="#gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
-				</li>
-				<li>
-					<a href="#invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
-				</li>
-				<li>
-					<a href="#gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
-				</li>
-			</ul>
-		</div>
-		<!-- END SHORTCUT AREA -->
-		
-
-		<!--================================================== -->
-
-		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
-
-		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-		
-		<script>
-			if (!window.jQuery) {
-				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
-			}
-		</script>
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-			}
-		</script>
-
-		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
-		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
-
-		<!-- BOOTSTRAP JS -->
-		<script src="js/bootstrap/bootstrap.min.js"></script>
-
-		<!-- CUSTOM NOTIFICATION -->
-		<script src="js/notification/SmartNotification.min.js"></script>
-
-		<!-- JARVIS WIDGETS -->
-		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
-
-		<!-- EASY PIE CHARTS -->
-		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-
-		<!-- SPARKLINES -->
-		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- JQUERY VALIDATE -->
-		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
-
-		<!-- JQUERY MASKED INPUT -->
-		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-
-		<!-- JQUERY SELECT2 INPUT -->
-		<script src="js/plugin/select2/select2.min.js"></script>
-
-		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-
-		<!-- browser msie issue fix -->
-		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-
-		<!-- FastClick: For mobile devices -->
-		<script src="js/plugin/fastclick/fastclick.js"></script>
-
-		<!--[if IE 7]>
-
-		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
-
-		<![endif]-->
-
-		<!-- Demo purpose only -->
-		<script src="js/demo.js"></script>
-
-		<!-- MAIN APP JS FILE -->
-		<script src="js/app.js"></script>
-
-		<!-- PAGE RELATED PLUGIN(S) 
-		<script src="..."></script>-->
-
-		
-
-		<script type="text/javascript">
-		
-		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-		
-		$(document).ready(function() {
-			
-			pageSetUp();
-		
-		})
-
-		</script>
-
-		<!-- Your GOOGLE ANALYTICS CODE Below -->
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-				_gaq.push(['_trackPageview']);
-			
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-
-		</script>
-
-	</body>
-
+			<!-- END MAIN CONTENT -->
+</body>
 </html>

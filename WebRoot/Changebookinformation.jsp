@@ -1,5 +1,4 @@
 <%@ page language ="java" contentType="text/html;charset=GB18030" pageEncoding="GB18030" %>
-<%@ page import="java.sql.*,java.util.*,javax.servlet.*,javax.servlet.http.*,java.text.*,java.math.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html lang="en-us">
@@ -185,7 +184,7 @@
 
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>Home</li><li>Add New Book</li>
+					<li>Home</li><li>Show Table</li><li>Update Information</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -208,7 +207,7 @@
 
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-						<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Add New Book</h1>
+						<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Change Information</h1>
 					</div>
 					
 				</div>
@@ -257,58 +256,44 @@
 									<!-- widget content -->
 									<div class="widget-body no-padding">
 				
-										<form action="AddnewbookAction.java" method ="post" class="smart-form">
+										<form class="smart-form">
 											
 				
 											<fieldset>
 												
 												<section>
-													<label class="label">New Book Number</label>
+													<label class="label">Book Number</label>
 													<label class="input">
-														<input type="text" name="booknumber" value="" class="input-sm">
+														<input type="text" class="input-sm">
 													</label>
 												</section>
-				
-												<section>
-													<label class="label">Book ISBN(PK)</label>
-													<label class="input">
-														<input type="text" name="ISBN" value="" class="input-sm">
-													</label>
-												</section>
-				
-												<section>
-													<label class="label">Book Title</label>
-													<label class="input">
-														<input type="text" name="newbookname" value="" class="input-sm" maxlength="10">
-													</label>
-													
-												</section>
+			
 																				
 												<section>
 													<label class="label">Author ID(FK)</label>
 													<label class="input">
-														<input type="text" name="author" value="" class="input-sm">
+														<input type="text" class="input-sm">
 													</label>
 												</section>
 												
 												<section>
 													<label class="label">Publisher</label>
 													<label class="input">
-														<input type="text" name="publisher" value="" class="input-sm">
+														<input type="text" class="input-sm">
 													</label>
 												</section>
 												
 												<section>
 													<label class="label">Publish Date</label>
 													<label class="input">
-														<input type="text" name="date" value="" class="input-sm">
+														<input type="text" class="input-sm">
 													</label>
 												</section>
 												
 												<section>
 													<label class="label">Price</label>
 													<label class="input">
-														<input type="text" name="price" value="" class="input-sm">
+														<input type="text" class="input-sm">
 													</label>
 												</section>
 											
@@ -316,8 +301,7 @@
 																							
 											
 											<footer>
-												
-												<button type="submit" class="btn btn-primary" >
+												<button type="submit" class="btn btn-primary">
 													Submit
 												</button>
 												<button type="button" class="btn btn-default" onclick="window.history.back();">
